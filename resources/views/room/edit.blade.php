@@ -22,14 +22,14 @@
     <div class="col-lg-8">
         <div class="card shadow-sm border">
             <div class="card-header">
-                <h2>Edit Room</h2>
+                <h2>Editar Habitacion</h2>
             </div>
             <div class="card-body p-3">
                 <form class="row g-3" method="POST" action="{{route('room.update',['room'=>$room->id])}}">
                     @method('PUT')
                     @csrf
                     <div class="col-md-12">
-                        <label for="type_id" class="form-label">Type</label>
+                        <label for="type_id" class="form-label">Tipo</label>
                         <select id="type_id" name="type_id" class="form-control select2">
                             @foreach ($types as $type)
                             <option value="{{$type->id}}" @if ($room->type->id == $type->id) selected @endif>{{$type->name}}</option>
@@ -42,7 +42,7 @@
                         @enderror
                     </div>
                     <div class="col-md-12">
-                        <label for="room_status_id" class="form-label">Room Status</label>
+                        <label for="room_status_id" class="form-label">Estado de la habitacion</label>
                         <select id="room_status_id" name="room_status_id" class="form-control select2">
                             @foreach ($roomstatuses as $roomstatus)
                             <option value="{{$roomstatus->id}}" @if ($room->roomstatus->id == $roomstatus->id) selected @endif>{{$roomstatus->name}} ({{$roomstatus->code}})</option>
@@ -55,7 +55,7 @@
                         @enderror
                     </div>
                     <div class="col-md-12">
-                        <label for="number" class="form-label">Room Number</label>
+                        <label for="number" class="form-label">Numero de la habitacion</label>
                         <input room="text" class="form-control @error('number') is-invalid @enderror" id="number"
                             name="number" value="{{$room->number}}" placeholder="ex: 1A">
                         @error('number')
@@ -65,7 +65,7 @@
                         @enderror
                     </div>
                     <div class="col-md-12">
-                        <label for="capacity" class="form-label">Capacity</label>
+                        <label for="capacity" class="form-label">Capacidad</label>
                         <input room="text" class="form-control @error('capacity') is-invalid @enderror" id="capacity"
                             name="capacity" value="{{$room->capacity}}" placeholder="ex: 4">
                         @error('capacity')
@@ -75,7 +75,7 @@
                         @enderror
                     </div>
                     <div class="col-md-12">
-                        <label for="price" class="form-label">Price</label>
+                        <label for="price" class="form-label">Precio</label>
                         <input room="text" class="form-control @error('price') is-invalid @enderror" id="price"
                             name="price" value="{{$room->price}}" placeholder="ex: 500000">
                         @error('price')
@@ -85,7 +85,7 @@
                         @enderror
                     </div>
                     <div class="col-md-12">
-                        <label for="view" class="form-label">View</label>
+                        <label for="view" class="form-label">Visualizar</label>
                         <textarea class="form-control" id="view" name="view" rows="3"
                             placeholder="ex: window see beach">{{$room->view}}</textarea>
                         @error('view')
@@ -95,7 +95,7 @@
                         @enderror
                     </div>
                     <div class="col-12">
-                        <button room="submit" class="btn btn-light shadow-sm border float-end">Save</button>
+                        <button room="submit" class="btn btn-light shadow-sm border float-end">Guardar</button>
                     </div>
                 </form>
             </div>

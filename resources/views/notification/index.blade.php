@@ -7,7 +7,7 @@
     <div class="page">
         <div class="timelines">
             <div class="timeline__group">
-                <span class="timeline__year time" aria-hidden="true">Unread</span>
+                <span class="timeline__year time" aria-hidden="true">No leido</span>
                 <div class="timeline__cards">
                     @forelse (auth()->user()->unreadNotifications as $notification)
                         <div class="timeline__card card">
@@ -24,14 +24,14 @@
                     @empty
                     <div class="timeline__card card">
                         <div class="card__content">
-                            <p>There's no new unread notification</p>
+                            <p>No hay ninguna notificación nueva sin leer</p>
                         </div>
                     </div>
                     @endforelse
                 </div>
             </div>
             <div class="timeline__group">
-                <span class="timeline__year time" aria-hidden="true">Read</span>
+                <span class="timeline__year time" aria-hidden="true">Leido</span>
                 <div class="timeline__cards">
                     @forelse (auth()->user()->readNotifications as $notification)
                         <div class="timeline__card card">
@@ -42,13 +42,13 @@
                             </header>
                             <div class="card__content">
                                 <p>{{ $notification->data['message'] }}</p>
-                                <a class="btn btn-sm shadow-sm myBtn border rounded mt-2 float-end" href="{{ $notification->data['url'] }}"> See Detail</a>
+                                <a class="btn btn-sm shadow-sm myBtn border rounded mt-2 float-end" href="{{ $notification->data['url'] }}"> Ver Detalle</a>
                             </div>
                         </div>
                     @empty
                     <div class="timeline__card card">
                         <div class="card__content">
-                            <p>There's no notification</p>
+                            <p>No hay notificación</p>
                         </div>
                     </div>
                     @endforelse
