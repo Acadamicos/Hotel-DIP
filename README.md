@@ -1,11 +1,4 @@
 # Laravel Hotel
-## Examples
-- Reservation
-![alt text](https://github.com/WailanTirajoh/laravel_hotel/blob/main/example-b.png?raw=true)
-
-- Dashboard
-![alt text](https://github.com/WailanTirajoh/laravel_hotel/blob/main/example.png?raw=true)
-- And more ...
 
 ## Instalation 
 
