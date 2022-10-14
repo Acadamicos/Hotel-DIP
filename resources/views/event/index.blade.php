@@ -27,8 +27,8 @@
 <body>
     <h1>Pusher Testt</h1>
     <p>
-        Try publishing an event to channel <code>my-channel</code>
-        with event name <code>my-event</code>.
+        Intenta publicar un evento en el canal <code>mi-canal</code>
+        con nombre de evento <code>mi-evento</code>.
     </p>
 </body>
 {{-- Sweet Alert 2 JS --}}

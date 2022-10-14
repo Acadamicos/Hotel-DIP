@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h5 class="card-title text-center">Hotel Information System</h5>
+                                <h5 class="card-title text-center"> Sistema de informacion del hotel</h5>
                             </div>
                         </div>
                         <form onsubmit="return disableButton()" class="form-signin" action="/postLogin" method="POST">
@@ -59,7 +59,7 @@
                                         <input type="password" id="password" name="password" autocomplete="new-password"
                                             class="form-control @error('password') is-invalid @enderror" placeholder="Password" value="{{ old('password') }}"
                                             required>
-                                        <label for="password">Password</label>
+                                        <label for="password">Contraseña</label>
                                         @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>

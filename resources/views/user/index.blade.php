@@ -22,7 +22,7 @@
                         <input type="hidden" name="customers" value="{{ request()->input('customers') }}">
                         <input class="form-control me-2" type="search" placeholder="Search by name" aria-label="Search"
                             id="search-user" name="qu" value="{{ request()->input('qu') }}">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                        <button class="btn btn-outline-dark" type="submit">Guardar</button>
                     </form>
                 </div>
             </div>
@@ -35,10 +35,10 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Role</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Correo</th>
+                                            <th scope="col">Rol</th>
+                                            <th scope="col">Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -93,7 +93,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    No hay datos en esta tabla
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <h3>User</h3>
+                            <h3>Usuario</h3>
                         </div>
                     </div>
                 </div>
@@ -138,10 +138,10 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Email</th>
-                                            <th scope="col">Role</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Correo</th>
+                                            <th scope="col">Rol</th>
+                                            <th scope="col">Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -196,7 +196,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    No hay datos en esta tabla
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <h3>Customer</h3>
+                            <h3>Cliente</h3>
                         </div>
                     </div>
                 </div>

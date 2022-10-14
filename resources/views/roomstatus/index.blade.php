@@ -32,10 +32,10 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Code</th>
-                                            <th scope="col">Information</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Codigo</th>
+                                            <th scope="col">Informacion</th>
+                                            <th scope="col">Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -87,7 +87,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="10" class="text-center">
-                                                    There's no data in this table
+                                                    No hay datos en la tabla
                                                 </td>
                                             </tr>
                                         @endforelse
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <h3>Room Status</h3>
+                            <h3>Estado de la habitacion</h3>
                         </div>
                     </div>
                 </div>

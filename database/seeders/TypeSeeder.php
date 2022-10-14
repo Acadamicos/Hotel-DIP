@@ -15,39 +15,29 @@ class TypeSeeder extends Seeder
     public function run()
     {
         $name = [
-            'Standard Room',
-            'Superior Room',
-            'Deluxe Room',
-            'Junior Suite Room',
-            'Suite Room',
-            'Presidential Suite',
-            'Single Room',
-            'Twin Room',
-            'Double Room',
-            'Family Room/Triple Room',
-            'Connecting Room',
-            'Murphy Room',
-            'Accessible Room/Disabled Room',
-            'Smoking/Non Smoking Room',
-            'Cabana Room',
+            'Habitación estándar',
+            'Habitación superior',
+            'Habitación de lujo',
+            'Habitación Junior Suite',
+            'Habitaciones Suite',
+            'Suite presidencial',
+            'Habitación individual',
+            'Habitaciones dobles',
+            'Habitación Familiar/Habitación Triple',
+
         ];
 
         $information = [
-            'Seperti namanya, jenis kamar standard room adalah tipe kamar hotel yang paling dasar di hotel. Biasanya, kamar tipe ini dibanderol dengan harga yang relatif murah. Fasilitas yang ditawarkan pun standar seperti kasur ukuran king size atau dua queen size. Namun, penawaran yang diberikan tergantung pada masing-masing hotel. Standard room hotel bintang 1 dan bintang 5 tentu berbeda.',
-            'Pada dasarnya, superior room adalah tipe kamar yang sedikit lebih baik dari tipe standard room. Perbedaannya dapat berupa dari fasilitas yang diberikan, interior kamar, atau pemandangan dari kamar.',
-            'Di atas tipe kamar hotel superior room adalah deluxe room. Kamar ini tentu memiliki kamar yang lebih besar. Tersedia pilihan kasur yang bisa kamu pilih, double bed atau twin bed. Biasanya, dari segi interior kamar ini terkesan lebih mewah.',
-            'Tipe kamar hotel junior suite room ditandai dengan adanya ruang tamu. Namun, ruang tamu tersebut masih berada satu ruangan dengan tempat tidur. Ruang tamu tersebut biasanya dibatasi atau disekat dengan lemari besar agar tempat tidur tidak terlihat. ',
-            'Suite room berada di atas tipe kamar hotel junior suite room. Ruang tamu di kamar hotel ini terpisah dari kamar tidur. Dari segi fasilitas, tentu berbeda dari junior suite room. Selain ruang tamu, biasanya tipe kamar hotel ini dilengkapi dengan dapur.',
-            'Presidential suite adalah tipe kamar hotel yang terbaik dan paling mahal. Bahkan, tidak semua hotel memiliki presidential suite. Fasilitas yang ditawarkan pun tentu yang terbaik, mulai dari interior, pemandangan kamar, dan masih banyak lainnya.',
-            'Single room adalah tipe kamar hotel yang paling umum. Tipe kamar hotel ini terdiri dari satu single bed, sofa, dan kamar mandi. Ukuran kamarnya juga tidak terlalu besar. Biasanya tipe kamar hotel ini dipilih oleh para backpacker atau solo traveler karena fasilitasnya memang untuk satu orang dan harga yang murah.',
-            'Dari namanya saja, sudah bisa ditebak bahwa tipe kamar hotel ini memiliki dua tempat tidur ukuran single yang terpisah. Tipe kamar hotel ini cocok digunakan untuk suami istri atau menginap bersama teman dengan jumlah orang 2-3 orang.',
-            'Ingin menginap dengan lebih nyaman dan fasilitas yang lebih baik? Kamu bisa memesan tipe kamar hotel double room. Tipe kamar hotel ini biasanya memiliki ukuran kasur yang besar seperti king size. Double room ini cocok banget buat pasangan suami istri yang ingin berbulan madu.',
-            'Pergi traveling bersama keluarga besar atau teman-teman? Kamu bisa pilih tipe kamar hotel family room. Dari segi ukuran kamar, tentu jauh lebih luas daripada tipe kamar hotel lainnya. Tipe kamar hotel family room ini biasanya tersedia satu tempat dengan ukuran king size dan satu tempat tidur dengan ukuran yang lebih kecil.',
-            'Tipe kamar hotel dengan Connecting Room ini cocok untuk kamu yang pergi bersama keluarga besar atau rombongan tetapi ingin memiliki kamar tidur masing-masing.  Kamar kamu dan anggota keluarga lainnya akan bersebelahan dan terdapat pintu yang menghubungkan kamar kalian. Sehingga, kalau kamu atau anggota keluarga lainnya ingin ke kamar satu sama lain, bisa melalui connecting door dan tidak perlu repot melalui pintu depan, Toppers.',
-            'Murphy room ini adalah tipe kamar hotel yang menyediakan sofa bed di kamar. Sofa bed ini digunakan sebagai tempat tidur pada malam hari dan ruang tamu di siang hari. Besar kamar Murphy Room ini sekitar 20 – 40 m. Wah, seru, ya konsepnya!',
-            'Tipe kamar Accessible Room/Disable Room ini tersedia untuk para tamu yang memiliki keterbatasan. Adanya tipe kamar ini juga diwajibkan oleh hukum, loh, untuk menghindari diskriminasi. Hal ini juga dibuat agar memudahkan tamu-temu tersebut saat menginap di hotel.',
-            'Biasanya tamu tidak diizinkan untuk merokok di dalam kamar. Tetapi, banyak hotel yang sudah menyediakan tipe kamar hotel Smoking/Non Smoking Room. Hal ini juga berguna agar tidak mengganggu tamu selanjutnya dengan aroma rokok yang terdapat pada kamar. Jadi, kalau kamu seorang perokok, sekarang bisa memesan kamar dengan tipe smooking room.',
-            'Kamu ingin langsung berenang saat buka pintu kamar? Atau punya private pool? Pilih tipe kamar hote Cabana Room! Tipe kamar hotel ini memang didesain dengan kolam renang private untuk pemesan kamar tersebut. Luas kamar Cabana Room ini sekitar 30 – 40 m.',
+            'Como sugiere el nombre, el tipo de habitación estándar es el tipo más básico de habitación de hotel en un hotel',
+            'Básicamente, una habitación superior es un tipo de habitación ligeramente mejor que una habitación estándar.',
+            'Por encima del tipo de habitación superior está la habitación deluxe. Esta habitación ciertamente tiene una habitación más grande. Hay una selección de colchones que puede elegir, camas dobles o camas individuales.',
+            'La habitación de hotel tipo suite junior se caracteriza por la presencia de una sala de estar. Sin embargo, la sala de estar sigue siendo una habitación con la cama. ',
+            'La habitación suite está por encima del tipo de habitación junior suite del hotel. La sala de estar de esta habitación de hotel está separada del dormitorio.',
+            'Las suites presidenciales son el mejor y más caro tipo de habitación de hotel. De hecho, no todos los hoteles cuentan con suites presidenciales.',
+            'La habitación individual es el tipo más común de habitación de hotel. Este tipo de habitación de hotel consta de una cama individual, sofá y baño. El tamaño de la habitación tampoco es demasiado grande.',
+            '¿Quieres una estancia más cómoda y mejores instalaciones? Puede reservar una habitación doble tipo habitación de hotel. Este tipo de habitación de hotel suele tener un tamaño de colchón grande, como un tamaño king. Esta habitación doble es perfecta para matrimonios que quieran ir de luna de miel.',
+            '¿Te vas de viaje con familiares o amigos? Puede elegir el tipo de habitación de hotel, habitación familiar. En cuanto al tamaño de la habitación, sin duda es mucho más amplia que otros tipos de habitaciones de hotel. Este tipo de habitación de hotel de habitación familiar generalmente está disponible en un lugar con una cama tamaño king y una cama con un tamaño más pequeño.',
+
         ];
 
         for ($i = 0; $i < count($name); $i++) {
